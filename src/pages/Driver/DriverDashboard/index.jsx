@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Img } from "../../../components/Img";
 import { Text } from "../../../components/Text";
 import { Button } from "../../../components/Button";
