@@ -29,7 +29,7 @@ export default function HomeLandingpagePage() {
                     color="white_A700_01"
                     size="5xl"
                     name="search"
-                    placeholder="Delivery address"
+                    placeholder="Search for products"
                     value={searchBarValue}
                     onChange={(e) => setSearchBarValue(e)}
                     suffix={
