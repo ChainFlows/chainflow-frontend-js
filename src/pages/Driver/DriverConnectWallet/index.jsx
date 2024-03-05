@@ -76,9 +76,11 @@ export default function ActivatedriverAccountConnectWalletPage() {
                       </Button>
                     </div>
                     <div className="flex flex-col items-start justify-start w-[82%]">
-                      <Text size="3xl" as="p">
-                        Vehicle information
-                      </Text>
+                      <Link to="/DriverVehicleInformation">
+                        <Text size="3xl" as="p">
+                          Vehicle information
+                        </Text>
+                      </Link>
                       <Text size="5xl" as="p" className="mt-[83px]">
                         Connect Wallet
                       </Text>

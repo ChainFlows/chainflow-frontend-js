@@ -92,7 +92,7 @@ export default function ActivateAccountSuccessfullyTwoPage() {
                 size="9xl"
                 className="mt-[29px] !shadow-md min-w-[370px] !rounded-[12px]"
               >
-                <div className="countdown">Go to dashboard in {countdown}s</div>
+                <div className="countdown">Redirecting to dashboard in {countdown}s</div>
               </Button>
             </Link>
             <div className="flex flex-row justify-center items-center w-full mt-[52px] gap-4 p-[22px] bg-gray-100_01 rounded-[24px]">
