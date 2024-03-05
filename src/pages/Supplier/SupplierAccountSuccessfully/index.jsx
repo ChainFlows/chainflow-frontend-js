@@ -15,7 +15,7 @@ export default function ActivateAccountSuccessfullyTwoPage() {
   useEffect(() => {
     // If countdown is 0, redirect to the homepage
     if (countdown === 0) {
-      navigate("/DriverDashboard");
+      navigate("/CompanyOverview");
     }
 
     // Set up an interval to decrease the countdown every second

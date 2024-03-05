@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Img } from "../../../components/Img";
 import { Text } from "../../../components/Text";
 import { Button } from "../../../components/Button";
@@ -8,7 +8,7 @@ import { Input } from "../../../components/Input";
 
 import Header from "../../../components/Header";
 
-export default function ActivatedriverAccountConnectWalletPage() {
+export default function ActivateSupplierAccountConnectWalletPage() {
   return (
     <>
       <Helmet>
@@ -18,17 +18,25 @@ export default function ActivatedriverAccountConnectWalletPage() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="flex flex-col items-center justify-center w-full pb-[168px] gap-[23px] bg-white-A700_01 shadow-sm">
+      <div className="flex flex-col items-center justify-center w-full pb-32 gap-[23px] bg-white-A700_01 shadow-sm">
         <Header className="flex justify-center items-center w-full p-[21px] bg-white-A700_01 shadow-xs" />
-        <div className="flex flex-row justify-center w-full max-w-[1109px]">
+        <div className="flex flex-row justify-center w-full max-w-[1136px]">
           <div className="flex flex-col items-start justify-start w-full">
-            <Text size="12xl" as="p" className="ml-6">
-              Activate your driver account
+            <Text size="12xl" as="p" className="ml-[51px]">
+              Activate your Supplier account
             </Text>
-            <div className="flex flex-row justify-start items-center w-full mt-4 gap-[22px]">
-              <div className="flex flex-col items-start justify-center w-[29%] p-[15px] bg-white-A700_01 rounded-[12px]">
-                <div className="flex flex-col items-center justify-start w-[82%] mt-[3px] ml-2.5">
-                  <div className="flex flex-row justify-start items-start w-full gap-[19px]">
+            <Input
+              color="gray_100_02"
+              size="5xl"
+              name="container589"
+              placeholder="Connecting a wallet enables you to make various payment transactions"
+              prefix={<Img src="images/img_alarm_2.svg" alt="Alarm 3" />}
+              className="w-[68%] mt-4 ml-[367px] gap-4 rounded-[24px]"
+            />
+            <div className="flex flex-row justify-start items-start w-[93%] mt-[15px] gap-[49px]">
+              <div className="flex flex-col items-center justify-center w-[31%] p-[18px] bg-white-A700_01 rounded-[12px]">
+                <div className="flex flex-col items-center justify-start w-[95%] mb-1">
+                  <div className="flex flex-row justify-start items-start w-[99%] gap-[19px]">
                     <Button
                       color="lime_500"
                       size="sm"
@@ -37,57 +45,62 @@ export default function ActivatedriverAccountConnectWalletPage() {
                     >
                       <Img src="images/img_container_598.svg" />
                     </Button>
-                    <Text size="4xl" as="p">
-                      Driver Information
+                    <Text size="4xl" as="p" className="mt-[3px]">
+                      Verify your business
                     </Text>
                   </div>
-                  <div className="flex flex-row justify-start items-center w-[94%] gap-3">
-                    <div className="h-[339px] w-[13%] relative">
-                      <div className="flex flex-col items-center justify-center w-max h-max left-0 bottom-0 right-0 top-0 m-auto absolute">
-                        <div className="h-[82px] w-[2px] z-[1] bg-lime-500" />
-                        <div className="flex flex-row justify-center items-start w-full mt-[-17px]">
-                          <div className="h-[82px] w-[2px] mt-[7px] z-[1] bg-lime-500" />
-                          <div className="h-[266px] w-px ml-[-1px] bg-gray-400_02" />
+                  <div className="h-[332px] w-[99%] relative">
+                    <div className="flex flex-col items-start justify-start w-[84%] h-full left-0 bottom-0 top-0 m-auto absolute">
+                      <div className="flex flex-col items-start justify-start w-full z-[1]">
+                        <div className="h-[65px] w-[2px] ml-3.5 bg-lime-500" />
+                        <div className="flex flex-row justify-start items-center mt-[-19px] gap-3">
+                          <Text
+                            size="3xl"
+                            as="p"
+                            className="flex justify-center items-center h-[28px] w-[28px] !text-gray-700_02 border-lime-500 border-2 border-solid bg-lime-500 text-shadow-ts1 text-center rounded-[50%]"
+                          >
+                            2
+                          </Text>
+                          <Text size="5xl" as="p">
+                            Connect Wallet
+                          </Text>
                         </div>
                       </div>
-                      <div className="flex flex-col items-center justify-start w-full gap-[131px] bottom-0 right-0 left-0 m-auto absolute">
+                      <div className="flex flex-col items-center justify-start mt-[-9px]">
+                        <div className="h-[266px] w-px bg-gray-400_02" />
                         <Text
                           size="3xl"
                           as="p"
-                          className="flex justify-center items-center h-[28px] w-[28px] !text-gray-700_02 border-lime-500 border-2 border-solid bg-lime-500 text-shadow-ts1 text-center rounded-[50%]"
-                        >
-                          3
-                        </Text>
-                        <Text
-                          size="3xl"
-                          as="p"
-                          className="flex justify-center items-center h-[28px] w-[28px] !text-gray-800 bg-gray-100 text-center rounded-[50%]"
+                          className="flex justify-center items-center h-[28px] w-[28px] mt-[-27px] !text-gray-800 bg-gray-100 text-center rounded-[50%]"
                         >
                           3
                         </Text>
                       </div>
-                      <Button
-                        color="lime_500"
-                        size="sm"
-                        shape="circle"
-                        className="w-[28px] top-[15%] right-0 left-0 m-auto border-lime-500 border-2 border-solid shadow-xl absolute"
-                      >
-                        <Img src="images/img_container_598.svg" />
-                      </Button>
                     </div>
-                    <div className="flex flex-col items-start justify-start w-[82%]">
-                      <Link to="/DriverVehicleInformation">
-                        <Text size="3xl" as="p">
-                          Vehicle information
+                    <div className="flex flex-col items-start justify-start w-[87%] bottom-[1%] right-0 m-auto absolute">
+                      <Button
+                        color="lime_100"
+                        leftIcon={
+                          <Img src="images/img_money_13.svg" alt="Money 13" />
+                        }
+                        className="w-full gap-2 !rounded-[12px]"
+                      >
+                        Business account
+                      </Button>
+                      <div className="flex flex-row justify-start items-center mt-[17px] gap-2 p-2">
+                        <Img
+                          src="images/img_money_13_gray_700_02.svg"
+                          alt="moneythirteen"
+                          className="h-[24px] w-[24px] ml-2"
+                        />
+                        <Text size="3xl" as="p" className="!text-gray-700_02">
+                          Integrate Mpesa
                         </Text>
-                      </Link>
-                      <Text size="5xl" as="p" className="mt-[83px]">
-                        Connect Wallet
-                      </Text>
+                      </div>
                       <Text
                         size="4xl"
                         as="p"
-                        className="mt-[129px] !text-gray-600"
+                        className="mt-[115px] ml-[5px] !text-gray-600"
                       >
                         Complete
                       </Text>
@@ -95,16 +108,8 @@ export default function ActivatedriverAccountConnectWalletPage() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-start justify-start w-[70%]">
-                <Input
-                  color="gray_100_02"
-                  size="5xl"
-                  name="container589"
-                  placeholder="Connecting a wallet enables you to make various payment transactions"
-                  prefix={<Img src="images/img_alarm_2.svg" alt="Alarm 3" />}
-                  className="w-full gap-4 rounded-[24px]"
-                />
-                <div className="flex flex-row justify-start items-start mt-5 gap-4">
+              <div className="flex flex-col items-start justify-start w-[65%] mt-[5px]">
+                <div className="flex flex-row justify-start items-start gap-4">
                   <Img
                     src="images/img_container_590.svg"
                     alt="container590"
@@ -114,7 +119,7 @@ export default function ActivatedriverAccountConnectWalletPage() {
                     Connect Wallet
                   </Text>
                 </div>
-                <div className="flex flex-row justify-start w-[43%] mt-1.5 p-[9px] border-lime-500 border border-solid bg-lime-50 rounded-[12px]">
+                <div className="flex flex-row justify-start w-[49%] mt-1.5 p-[9px] border-lime-500 border border-solid bg-lime-50 rounded-[12px]">
                   <div className="flex flex-row justify-start items-center w-[47%] ml-[15px]">
                     <Img
                       src="images/img_frame.svg"
@@ -128,7 +133,7 @@ export default function ActivatedriverAccountConnectWalletPage() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-row justify-start w-[89%] mt-4 gap-6">
+                <div className="flex flex-row justify-start w-full mt-4 gap-6">
                   <div className="flex flex-col items-start justify-center w-[49%] gap-px">
                     <Text size="3xl" as="p" className="mt-0.5 !text-gray-800">
                       Private Key
@@ -162,12 +167,12 @@ export default function ActivatedriverAccountConnectWalletPage() {
                   <Button
                     color="gray_100_02"
                     size="md"
-                    className="mb-[3px] !text-blue_gray-900_02 min-w-[83px] rounded-[14px]"
+                    className="!text-blue_gray-900_02 min-w-[83px] rounded-[14px]"
                   >
                     Optional
                   </Button>
                 </div>
-                <div className="flex flex-row justify-start w-[43%] mt-6 p-5 border-lime-500 border border-solid bg-lime-50 rounded-[12px]">
+                <div className="flex flex-row justify-start w-[49%] mt-6 p-5 border-lime-500 border border-solid bg-lime-50 rounded-[12px]">
                   <div className="flex flex-row justify-start items-center w-[44%] ml-1">
                     <Img
                       src="images/img_frame.svg"
@@ -181,36 +186,41 @@ export default function ActivatedriverAccountConnectWalletPage() {
                     />
                   </div>
                 </div>
+                <div className="flex flex-row justify-start w-full mt-4 gap-6">
+                  <div className="flex flex-col items-start justify-center w-[49%] gap-px">
+                    <Text
+                      size="3xl"
+                      as="p"
+                      className="mt-0.5 !text-gray-800"
+                      SupplierConnectWallet
+                    >
+                      Paybill Number
+                    </Text>
+                    <Input
+                      type="number"
+                      name="textfield_two"
+                      placeholder="Enter  your Paybill Number"
+                      className="w-full"
+                    />
+                  </div>
+                  <div className="flex flex-col items-start justify-start w-[49%] gap-[3px]">
+                    <Text size="3xl" as="p" className="!text-gray-800">
+                      SupplierConnectWallet Phone Number
+                    </Text>
+                    <Input
+                      type="number"
+                      name="phoneNumber"
+                      placeholder="Enter phone number"
+                      className="w-full"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex flex-row justify-start w-[62%] mt-4 ml-[340px] gap-6">
-              <div className="flex flex-col items-start justify-center w-[49%] gap-px">
-                <Text size="3xl" as="p" className="mt-0.5 !text-gray-800">
-                  Paybill Number
-                </Text>
-                <Input
-                  type="number"
-                  name="textfield_two"
-                  placeholder="Enter  your Paybill Number"
-                  className="w-full"
-                />
-              </div>
-              <div className="flex flex-col items-start justify-start w-[49%] gap-[3px]">
-                <Text size="3xl" as="p" className="!text-gray-800">
-                  Phone Number
-                </Text>
-                <Input
-                  type="number"
-                  name="phoneNumber"
-                  placeholder="Enter phone number"
-                  className="w-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-start w-[90%] mt-[188px] ml-[33px] gap-8">
+            <div className="flex flex-col items-center justify-start w-[88%] mt-[149px] ml-[60px] gap-8">
               <div className="h-px w-full bg-gray-100" />
               <div className="flex flex-row justify-between w-full">
-                <Link to="/DriverVehicleInformation">
+                <Link to="/SupplierInformation">
                   <Button
                     color="lime_100_01"
                     size="9xl"
@@ -222,7 +232,7 @@ export default function ActivatedriverAccountConnectWalletPage() {
                     Back
                   </Button>
                 </Link>
-                <Link to="/ActivateAccountSuccessfully">
+                <Link to="/SupplierAccountSuccessfully">
                   <Button
                     color="lime_700"
                     size="9xl"

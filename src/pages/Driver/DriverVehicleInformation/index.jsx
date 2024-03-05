@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Img } from "../../../components/Img";
 import { Text } from "../../../components/Text";
 import { Button } from "../../../components/Button";
@@ -74,9 +74,11 @@ export default function ActivateAccountVerifyBusinessPage() {
                     >
                       <Img src="images/img_container_598.svg" />
                     </Button>
-                    <Text size="4xl" as="p" className="mt-[3px]">
-                      Driver Information
-                    </Text>
+                    <Link to="/DriverInformation">
+                      <Text size="4xl" as="p" className="mt-[3px]">
+                        Driver Information
+                      </Text>
+                    </Link>
                   </div>
                   <div className="flex flex-row justify-start items-center w-full mt-[-1px] gap-3">
                     <div className="h-[338px] w-[11%] relative">
@@ -278,16 +280,18 @@ export default function ActivateAccountVerifyBusinessPage() {
             </div>
             <div className="h-px w-[88%] mt-[326px] bg-gray-100" />
             <div className="flex flex-row justify-between w-[96%] mt-8">
-              <Button
-                color="lime_100_01"
-                size="9xl"
-                leftIcon={
-                  <Img src="images/img_arrow_left.svg" alt="Arrow left" />
-                }
-                className="gap-1.5 min-w-[110px] !rounded-[12px]"
-              >
-                Back
-              </Button>
+              <Link to="/DriverInformation">
+                <Button
+                  color="lime_100_01"
+                  size="9xl"
+                  leftIcon={
+                    <Img src="images/img_arrow_left.svg" alt="Arrow left" />
+                  }
+                  className="gap-1.5 min-w-[110px] !rounded-[12px]"
+                >
+                  Back
+                </Button>
+              </Link>
               <Link to="/DriverConnectWallet">
                 <Button
                   color="lime_700"

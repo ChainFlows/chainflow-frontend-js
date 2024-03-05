@@ -117,7 +117,7 @@ export default function HomeLandingpagePage() {
                         size="xs"
                         className="!text-gray-400_02 min-w-[59px]"
                       >
-                        Seach
+                        Search
                       </Button>
                     </div>
                     <div className="flex flex-col items-start justify-start w-full">
@@ -306,13 +306,15 @@ export default function HomeLandingpagePage() {
                     <br />
                     loyalty programs, and more.
                   </Text>
-                  <Button
-                    color="gray_200"
-                    size="17xl"
-                    className="mt-10 min-w-[224px] rounded-[24px]"
-                  >
-                    Partner with us
-                  </Button>
+                  <Link to="/SupplierInformation">
+                    <Button
+                      color="gray_200"
+                      size="17xl"
+                      className="mt-10 min-w-[224px] rounded-[24px]"
+                    >
+                      Partner with us
+                    </Button>
+                  </Link>
                   <Text
                     size="9xl"
                     as="p"
