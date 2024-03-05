@@ -13,7 +13,7 @@ const ProjectRoutes = () => {
             element: <HomeLandingpagePage />
         },
         {
-            path: "ActivateDriverAccountVerifyBusiness",
+            path: "DriverInformation",
             element: <ActivateDriverAccountVerifyBusiness />
         },
         {

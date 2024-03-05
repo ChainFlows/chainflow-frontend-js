@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-// import { Button, Img, Text, Input, SelectBox } from "../../components";
+import { Link } from "react-router-dom";
 import { Img } from "../../../components/Img";
 import { Text } from "../../../components/Text";
 import { Button } from "../../../components/Button";
@@ -20,7 +20,10 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
     <>
       <Helmet>
         <title>dApp Hackthon-Javascript</title>
-        <meta name="description" content="Web site created using create-react-app" />
+        <meta
+          name="description"
+          content="Web site created using create-react-app"
+        />
       </Helmet>
       <div className="flex flex-col items-center justify-center w-full pb-[188px] gap-[31px] bg-white-A700_01 shadow-sm">
         <Header1 className="flex flex-row justify-center items-center w-full p-[21px] bg-white-A700_01 shadow-xs" />
@@ -75,18 +78,35 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                       <Button
                         color="lime_50"
                         size="8xl"
-                        leftIcon={<Img src="images/img_circle_09_lime_900.svg" alt="Circle 09" />}
+                        leftIcon={
+                          <Img
+                            src="images/img_circle_09_lime_900.svg"
+                            alt="Circle 09"
+                          />
+                        }
                         className="w-full gap-2 !rounded-[12px]"
                       >
                         Personal Information
                       </Button>
-                      <Text size="4xl" as="p" className="mt-[93px] ml-[3px] !text-gray-600">
+                      <Text
+                        size="4xl"
+                        as="p"
+                        className="mt-[93px] ml-[3px] !text-gray-600"
+                      >
                         Vehicle information
                       </Text>
-                      <Text size="4xl" as="p" className="mt-14 ml-[3px] !text-gray-600">
+                      <Text
+                        size="4xl"
+                        as="p"
+                        className="mt-14 ml-[3px] !text-gray-600"
+                      >
                         Connect Wallet
                       </Text>
-                      <Text size="4xl" as="p" className="mt-[57px] ml-[3px] !text-gray-600">
+                      <Text
+                        size="4xl"
+                        as="p"
+                        className="mt-[57px] ml-[3px] !text-gray-600"
+                      >
                         Complete
                       </Text>
                     </div>
@@ -100,7 +120,8 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                   leftIcon={<Img src="images/img_alarm_2.svg" alt="Alarm 2" />}
                   className="w-full gap-4 rounded-[24px]"
                 >
-                  Collecting this information to ensure the security and verify your identity
+                  Collecting this information to ensure the security and verify
+                  your identity
                 </Button>
                 <div className="flex flex-row justify-start items-start mt-[19px] ml-[3px] gap-3">
                   <Img
@@ -117,7 +138,12 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                     <Text size="3xl" as="p" className="!text-gray-800">
                       Driver name
                     </Text>
-                    <Input type="text" name="name" placeholder="Company name" className="w-full" />
+                    <Input
+                      type="text"
+                      name="name"
+                      placeholder="Company name"
+                      className="w-full"
+                    />
                   </div>
                   <div className="flex flex-col items-start justify-center w-[49%] gap-px">
                     <Text size="3xl" as="p" className="mt-0.5 !text-gray-800">
@@ -126,7 +152,9 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="freelance"
                       placeholder="Freelance Driver"
                       options={dropDownOptions}
@@ -141,7 +169,11 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                     </Text>
                     <div className="flex flex-row justify-center items-center w-full p-1.5 bg-gray-200_01 rounded-[12px]">
                       <div className="flex flex-row justify-start items-center w-[14%] gap-[7px]">
-                        <Img src="images/img_image_492.svg" alt="image492_one" className="h-[15px]" />
+                        <Img
+                          src="images/img_image_492.svg"
+                          alt="image492_one"
+                          className="h-[15px]"
+                        />
                         <Img
                           src="images/img_arrow_down_gray_800_01.svg"
                           alt="arrowdown_one"
@@ -152,20 +184,37 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                       <Text size="3xl" as="p" className="ml-6">
                         (209)2423858798
                       </Text>
-                      <Img src="images/img_lock.svg" alt="lock_one" className="h-[16px] w-[16px] ml-[34px]" />
+                      <Img
+                        src="images/img_lock.svg"
+                        alt="lock_one"
+                        className="h-[16px] w-[16px] ml-[34px]"
+                      />
                     </div>
                   </div>
                   <div className="flex flex-col items-start justify-start w-[49%] gap-[3px]">
                     <Text size="3xl" as="p" className="!text-gray-800">
                       Email
                     </Text>
-                    <Input type="email" name="email" placeholder="Email" className="w-full" />
+                    <Input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      className="w-full"
+                    />
                   </div>
                 </div>
-                <Text size="3xl" as="p" className="mt-[17px] ml-[3px] !text-gray-800">
+                <Text
+                  size="3xl"
+                  as="p"
+                  className="mt-[17px] ml-[3px] !text-gray-800"
+                >
                   Address
                 </Text>
-                <Input name="address" placeholder="Add address" className="w-[44%] mt-[3px] ml-[3px]" />
+                <Input
+                  name="address"
+                  placeholder="Add address"
+                  className="w-[44%] mt-[3px] ml-[3px]"
+                />
                 <Text size="3xl" as="p" className="mt-5 ml-[3px]">
                   Driver trainings
                 </Text>
@@ -173,7 +222,9 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                   <Button
                     color="lime_500"
                     size="md"
-                    rightIcon={<Img src="images/img_e_remove.svg" alt="E remove" />}
+                    rightIcon={
+                      <Img src="images/img_e_remove.svg" alt="E remove" />
+                    }
                     className="gap-1 min-w-[173px] !rounded-[12px]"
                   >
                     Defensive Driving
@@ -181,7 +232,9 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                   <Button
                     color="lime_500"
                     size="md"
-                    rightIcon={<Img src="images/img_e_remove.svg" alt="E remove" />}
+                    rightIcon={
+                      <Img src="images/img_e_remove.svg" alt="E remove" />
+                    }
                     className="ml-[11px] gap-[3px] min-w-[268px] !rounded-[12px]"
                   >
                     Carrying Hazardous Materials
@@ -189,12 +242,18 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                   <Button
                     color="lime_500"
                     size="md"
-                    rightIcon={<Img src="images/img_e_remove.svg" alt="E remove" />}
+                    rightIcon={
+                      <Img src="images/img_e_remove.svg" alt="E remove" />
+                    }
                     className="ml-[11px] gap-1 min-w-[164px] !rounded-[12px]"
                   >
                     Certification two
                   </Button>
-                  <Img src="images/img_library_add_1.svg" alt="libraryaddone" className="h-[24px] w-[24px] ml-[21px]" />
+                  <Img
+                    src="images/img_library_add_1.svg"
+                    alt="libraryaddone"
+                    className="h-[24px] w-[24px] ml-[21px]"
+                  />
                 </div>
                 <Button
                   size="md"
@@ -206,14 +265,18 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
               </div>
             </div>
             <div className="h-px w-[93%] mt-[306px] ml-6 bg-gray-100" />
-            <Button
-              color="lime_700"
-              size="9xl"
-              rightIcon={<Img src="images/img_arrow_right.svg" alt="Arrow right" />}
-              className="mt-8 ml-[895px] gap-1.5 min-w-[153px] !rounded-[12px]"
-            >
-              Continue
-            </Button>
+            <Link to="/DriverVehicleInformation">
+              <Button
+                color="lime_700"
+                size="9xl"
+                rightIcon={
+                  <Img src="images/img_arrow_right.svg" alt="Arrow right" />
+                }
+                className="mt-8 ml-[895px] gap-1.5 min-w-[153px] !rounded-[12px]"
+              >
+                Continue
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
