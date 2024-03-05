@@ -257,7 +257,7 @@ export default function ActivateDriverAccountVerifyBusinessPage() {
                 </div>
                 <Button
                   size="md"
-                  leftIcon={<Img src="images/img_search.svg" alt="Search" />}
+                  leftIcon={<Img src="images/img_seaDriverDashboardOnerch.svg" alt="Search" />}
                   className="mt-2.5 ml-[3px] gap-1.5 !text-gray-400_02 border-gray-500_02 border border-solid min-w-[276px] !rounded-[12px]"
                 >
                   Search available Certifi...

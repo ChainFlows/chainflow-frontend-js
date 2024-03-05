@@ -5,6 +5,7 @@ import ActivateAccountSuccessfully from "./pages/Driver/ActivateAccountSuccessfu
 import ActivateDriverAccountVerifyBusiness from "./pages/Driver/ActivateDriverAccountVerifyBusiness";
 import DriverVehicleInformation from "./pages/Driver/DriverVehicleInformation";
 import DriverConnectWallet from "./pages/Driver/DriverConnectWallet";
+import DriverDashboard from "./pages/Driver/DriverDashboard";
 
 const ProjectRoutes = () => {
     let element = useRoutes([
@@ -27,6 +28,10 @@ const ProjectRoutes = () => {
         {
             path: "ActivateAccountSuccessfully",
             element: <ActivateAccountSuccessfully />
+        },
+        {
+            path: "DriverDashboard",
+            element: <DriverDashboard/>
         }
     ]); 
     return element;
