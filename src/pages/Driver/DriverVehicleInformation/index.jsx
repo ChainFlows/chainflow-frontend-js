@@ -1,11 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-// import { Button, Img, Text, SelectBox, Input } from "../../components";
+import { Link } from "react-router-dom";
 import { Img } from "../../../components/Img";
 import { Text } from "../../../components/Text";
 import { Button } from "../../../components/Button";
 import { Input } from "../../../components/Input";
-import { SelectBox } from "../../../components/SelectBox"
+import { SelectBox } from "../../../components/SelectBox";
 
 const dropDownOptions = [
   { label: "Option1", value: "option1" },
@@ -18,13 +18,20 @@ export default function ActivateAccountVerifyBusinessPage() {
     <>
       <Helmet>
         <title>dApp Hackthon-Javascript</title>
-        <meta name="description" content="Web site created using create-react-app" />
+        <meta
+          name="description"
+          content="Web site created using create-react-app"
+        />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full pb-[111px] gap-[31px] bg-white-A700_01 shadow-sm">
         <header className="flex flex-row justify-center items-center w-full pt-[22px] px-[22px] bg-white-A700_01 shadow-xs">
           <div className="flex flex-row justify-between items-center w-full mx-auto max-w-[1371px]">
             <div className="flex flex-row justify-start items-start gap-3">
-              <Img src="images/img_image_493.svg" alt="image493_one" className="h-[33px]" />
+              <Img
+                src="images/img_image_493.svg"
+                alt="image493_one"
+                className="h-[33px]"
+              />
               <Text size="6xl" as="p" className="mt-[3px]">
                 ChainFlow
               </Text>
@@ -42,7 +49,11 @@ export default function ActivateAccountVerifyBusinessPage() {
                   Company name
                 </Text>
               </div>
-              <Img src="images/img_help_2.svg" alt="helptwo_one" className="h-[24px] w-[24px]" />
+              <Img
+                src="images/img_help_2.svg"
+                alt="helptwo_one"
+                className="h-[24px] w-[24px]"
+              />
             </div>
           </div>
         </header>
@@ -55,7 +66,12 @@ export default function ActivateAccountVerifyBusinessPage() {
               <div className="flex flex-col items-center justify-center w-[30%] p-[17px] bg-white-A700_01 rounded-[12px]">
                 <div className="flex flex-col items-start justify-start w-[92%]">
                   <div className="flex flex-row justify-start items-start gap-[15px] z-[1]">
-                    <Button color="lime_500" size="sm" shape="circle" className="w-[28px]">
+                    <Button
+                      color="lime_500"
+                      size="sm"
+                      shape="circle"
+                      className="w-[28px]"
+                    >
                       <Img src="images/img_container_598.svg" />
                     </Button>
                     <Text size="4xl" as="p" className="mt-[3px]">
@@ -99,7 +115,11 @@ export default function ActivateAccountVerifyBusinessPage() {
                       <Text size="4xl" as="p" className="ml-2.5 !text-gray-600">
                         Connect Wallet
                       </Text>
-                      <Text size="4xl" as="p" className="ml-[3px] !text-gray-600">
+                      <Text
+                        size="4xl"
+                        as="p"
+                        className="ml-[3px] !text-gray-600"
+                      >
                         Complete
                       </Text>
                     </div>
@@ -113,7 +133,8 @@ export default function ActivateAccountVerifyBusinessPage() {
                   leftIcon={<Img src="images/img_alarm_2.svg" alt="Alarm 2" />}
                   className="w-full gap-4 rounded-[24px]"
                 >
-                  Collecting this information to ensure the security and verify your identity
+                  Collecting this information to ensure the security and verify
+                  your identity
                 </Button>
                 <div className="flex flex-row justify-start items-start mt-[19px] ml-[3px] gap-3">
                   <Img
@@ -133,7 +154,9 @@ export default function ActivateAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="scania"
                       placeholder="Scania"
                       options={dropDownOptions}
@@ -147,7 +170,9 @@ export default function ActivateAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="cx5"
                       placeholder="cx5"
                       options={dropDownOptions}
@@ -163,7 +188,9 @@ export default function ActivateAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="boxtruck"
                       placeholder="Box Truck"
                       options={dropDownOptions}
@@ -175,17 +202,34 @@ export default function ActivateAccountVerifyBusinessPage() {
                       license expiry date
                     </Text>
                     <div className="flex flex-row justify-between items-center w-full p-[7px] bg-gray-200_01 rounded-[12px]">
-                      <Text size="3xl" as="p" className="mt-0.5 ml-1 !text-gray-400_02">
+                      <Text
+                        size="3xl"
+                        as="p"
+                        className="mt-0.5 ml-1 !text-gray-400_02"
+                      >
                         mm/dd/yyyy
                       </Text>
-                      <Img src="images/img_calendar.svg" alt="calendar_one" className="h-[16px] w-[16px] mr-[3px]" />
+                      <Img
+                        src="images/img_calendar.svg"
+                        alt="calendar_one"
+                        className="h-[16px] w-[16px] mr-[3px]"
+                      />
                     </div>
                   </div>
                 </div>
-                <Text size="3xl" as="p" className="mt-[23px] ml-[3px] !text-gray-800">
+                <Text
+                  size="3xl"
+                  as="p"
+                  className="mt-[23px] ml-[3px] !text-gray-800"
+                >
                   License Number
                 </Text>
-                <Input type="number" name="textfield" placeholder="15968191" className="w-[44%] mt-[3px] ml-[3px]" />
+                <Input
+                  type="number"
+                  name="textfield"
+                  placeholder="15968191"
+                  className="w-[44%] mt-[3px] ml-[3px]"
+                />
                 <div className="flex flex-row justify-start w-[92%] mt-[17px] ml-[3px] gap-6">
                   <div className="flex flex-col items-start justify-start w-[49%] gap-[3px]">
                     <Text size="3xl" as="p" className="!text-gray-800">
@@ -194,7 +238,9 @@ export default function ActivateAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="client"
                       placeholder="Client"
                       options={dropDownOptions}
@@ -208,7 +254,9 @@ export default function ActivateAccountVerifyBusinessPage() {
                     <SelectBox
                       color="gray_200_01"
                       size="sm"
-                      indicator={<Img src="images/img_arrowdown.svg" alt="arrow_down" />}
+                      indicator={
+                        <Img src="images/img_arrowdown.svg" alt="arrow_down" />
+                      }
                       name="city"
                       placeholder="Select city"
                       options={dropDownOptions}
@@ -219,7 +267,11 @@ export default function ActivateAccountVerifyBusinessPage() {
               </div>
             </div>
             <div className="flex flex-row justify-start items-center w-[38%] mt-[60px] gap-3">
-              <Img src="images/img_container_584.svg" alt="container584" className="h-[36px] w-[36px] rounded-[12px]" />
+              <Img
+                src="images/img_container_584.svg"
+                alt="container584"
+                className="h-[36px] w-[36px] rounded-[12px]"
+              />
               <Text size="6xl" as="p">
                 Vehicle maintainance record
               </Text>
@@ -229,19 +281,25 @@ export default function ActivateAccountVerifyBusinessPage() {
               <Button
                 color="lime_100_01"
                 size="9xl"
-                leftIcon={<Img src="images/img_arrow_left.svg" alt="Arrow left" />}
+                leftIcon={
+                  <Img src="images/img_arrow_left.svg" alt="Arrow left" />
+                }
                 className="gap-1.5 min-w-[110px] !rounded-[12px]"
               >
                 Back
               </Button>
-              <Button
-                color="lime_700"
-                size="9xl"
-                rightIcon={<Img src="images/img_arrow_right.svg" alt="Arrow right" />}
-                className="gap-1.5 min-w-[153px] !rounded-[12px]"
-              >
-                Continue
-              </Button>
+              <Link to="/DriverConnectWallet">
+                <Button
+                  color="lime_700"
+                  size="9xl"
+                  rightIcon={
+                    <Img src="images/img_arrow_right.svg" alt="Arrow right" />
+                  }
+                  className="gap-1.5 min-w-[153px] !rounded-[12px]"
+                >
+                  Continue
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
