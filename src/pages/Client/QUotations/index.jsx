@@ -1,10 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { CloseSVG } from "../../../assets/images";
-import { Text } from "../../../components/Text";
-import { Input } from "../../../components/Input";
 import { Img } from "../../../components/Img";
+import { Text } from "../../../components/Text";
+import { Button } from "../../../components/Button";
 import { SelectBox } from "../../../components/SelectBox";
+import { Input } from "../../../components/Input";
 import Footer from "../../../components/Footer";
 import { ReactTable } from "../../../components/ReactTable";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -14,7 +15,7 @@ const dropDownOptions = [
   { label: "Option2", value: "option2" },
   { label: "Option3", value: "option3" },
 ];
-const table7Data = [
+const table1Data = [
   {
     productone: "Supplier Alpha",
     statue: "Active",
@@ -45,16 +46,16 @@ const table7Data = [
   },
 ];
 
-export default function QUotationsPage() {
-  const [searchBarValue67, setSearchBarValue67] = React.useState("");
-  const table7Columns = React.useMemo(() => {
-    const table7ColumnHelper = createColumnHelper();
+export default function QUotationsOnePage() {
+  const [searchBarValue21, setSearchBarValue21] = React.useState("");
+  const table1Columns = React.useMemo(() => {
+    const table1ColumnHelper = createColumnHelper();
     return [
-      table7ColumnHelper.accessor("productone", {
+      table1ColumnHelper.accessor("productone", {
         cell: (info) => (
           <div className="flex flex-row justify-start">
             <div className="flex flex-row justify-start items-center w-[57%] mt-[3px] ml-[22px] gap-[18px]">
-              <div className="h-[85px] w-[85px] bg-blue_gray-100 rounded-[12px]" />
+              <Img src="images/img_image_324.png" alt="image324_one" className="w-[85px] object-cover rounded-[12px]" />
               <div className="flex flex-col items-start justify-start w-[58%] gap-[9px]">
                 <Text as="p">{info?.getValue?.()}</Text>
                 <Text size="lg" as="p">
@@ -71,7 +72,7 @@ export default function QUotationsPage() {
         ),
         meta: { width: "447px" },
       }),
-      table7ColumnHelper.accessor("statue", {
+      table1ColumnHelper.accessor("statue", {
         cell: (info) => (
           <Text as="p" className="!text-gray-500_02">
             {info?.getValue?.()}
@@ -84,7 +85,7 @@ export default function QUotationsPage() {
         ),
         meta: { width: "208px" },
       }),
-      table7ColumnHelper.accessor("price", {
+      table1ColumnHelper.accessor("price", {
         cell: (info) => <Text as="p">{info?.getValue?.()}</Text>,
         header: (info) => (
           <Text as="p" className="py-[23px]">
@@ -93,7 +94,7 @@ export default function QUotationsPage() {
         ),
         meta: { width: "256px" },
       }),
-      table7ColumnHelper.accessor("unitssold", {
+      table1ColumnHelper.accessor("unitssold", {
         cell: (info) => <Text as="p">{info?.getValue?.()}</Text>,
         header: (info) => (
           <Text as="p" className="pt-[25px] pb-[21px]">
@@ -102,7 +103,7 @@ export default function QUotationsPage() {
         ),
         meta: { width: "326px" },
       }),
-      table7ColumnHelper.accessor("expenses", {
+      table1ColumnHelper.accessor("expenses", {
         cell: (info) => (
           <Text size="2xl" as="p">
             {info?.getValue?.()}
@@ -128,12 +129,16 @@ export default function QUotationsPage() {
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-end justify-start w-full gap-[35px]">
             <div className="flex flex-row justify-between items-center w-[13%] mr-7">
-              <div className="h-[38px] w-[37px] bg-blue_gray-100 rounded-[12px]" />
-              <div className="h-[34px] w-[33px] bg-blue_gray-100 rounded-[12px]" />
-              <div className="h-[53px] w-[53px] bg-blue_gray-100 rounded-[26px]" />
+              <Button size="4xl" shape="square" className="w-[37px]">
+                <Img src="images/img_image_311.png" />
+              </Button>
+              <Button size="2xl" shape="square" className="w-[33px]">
+                <Img src="images/img_image_321.png" />
+              </Button>
+              <Img src="images/img_image_323.png" alt="image323_one" className="h-[53px] w-[53px] rounded-[50%]" />
             </div>
             <div className="flex flex-col items-start justify-start w-full">
-              <div className="h-[284px] w-full bg-blue_gray-100 rounded-[12px]" />
+              <Img src="images/img_image_548.png" alt="image548_one" className="w-full object-cover rounded-[12px]" />
               <Text size="13xl" as="p" className="mt-[83px] ml-9">
                 Product 3600
               </Text>
@@ -146,12 +151,12 @@ export default function QUotationsPage() {
                         size="lg"
                         name="search"
                         placeholder="Search for products"
-                        value={searchBarValue67}
-                        onChange={(e) => setSearchBarValue67(e)}
+                        value={searchBarValue21}
+                        onChange={(e) => setSearchBarValue21(e)}
                         suffix={
-                          searchBarValue67?.length > 0 ? (
+                          searchBarValue21?.length > 0 ? (
                             <CloseSVG
-                              onClick={() => setSearchBarValue67("")}
+                              onClick={() => setSearchBarValue21("")}
                               height={24}
                               width={24}
                               fillColor="#18204aff"
@@ -201,8 +206,8 @@ export default function QUotationsPage() {
                       headerProps={{ className: "bg-gray-200_02 shadow-xs rounded-tl-[30px] rounded-tr-[30px]" }}
                       rowDataProps={{ className: "bg-white-A700_01 shadow-xs rounded-[12px]" }}
                       className="w-[1383px]"
-                      columns={table7Columns}
-                      data={table7Data}
+                      columns={table1Columns}
+                      data={table1Data}
                     />
                   </div>
                 </div>
