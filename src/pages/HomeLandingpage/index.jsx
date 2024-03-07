@@ -343,13 +343,15 @@ export default function HomeLandingpagePage() {
                   >
                     service
                   </Text>
-                  <Button
-                    color="gray_200"
-                    size="18xl"
-                    className="mt-[31px] min-w-[214px] rounded-[24px]"
-                  >
-                    Work with us
-                  </Button>
+                  <Link to="/ActiveClientAccount">
+                    <Button
+                      color="gray_200"
+                      size="18xl"
+                      className="mt-[31px] min-w-[214px] rounded-[24px]"
+                    >
+                      Work with us
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-row justify-between items-start w-[99%] mt-[74px]">
