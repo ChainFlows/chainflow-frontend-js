@@ -11,6 +11,17 @@ import ActivateSupplierAccountConnectWallet from "./pages/Supplier/ActivateSuppl
 import CompanyOverview from "./pages/Supplier/CompanyOverview";
 import SupplierAccountSuccessfully from "./pages/Supplier/SupplierAccountSuccessfully";
 import Driversfindjob from "./pages/Driver/Driversfindjob";
+import ActiveClientAccount from "./pages/Client/ActivateClientAccount";
+import ClientConnectWallet from "./pages/Client/ActivateClientAccountConnectWallet";
+import ClientAccountSuccessfully from "./pages/Client/ClientAccountSuccessfully";
+import ChainFlowProducts from "./pages/Client/ChainFlowProducts";
+import ProductCategories from "./pages/Client/ProductCategories";
+import ProductsUnderCategory from "./pages/Client/ProductsUnderCategory";
+import OrderingPage from "./pages/Client/Orderingpage";
+import ProductDetails from "./pages/Client/ProductDetails";
+import MakeOrder from "./pages/Client/MakeOrder";
+import OrderComplete from "./pages/Client/OrderComplete";
+import QUotations from "./pages/Client/QUotations";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -57,6 +68,50 @@ const ProjectRoutes = () => {
     {
       path: "Driverfindjob",
       element: <Driversfindjob />,
+    },
+    {
+      path: "ActiveClientAccount",
+      element: <ActiveClientAccount />,
+    },
+    {
+      path: "ClientConnectWallet",
+      element: <ClientConnectWallet />,
+    },
+    {
+      path: "ClientAccountSuccessfully",
+      element: <ClientAccountSuccessfully />,
+    },
+    {
+      path: "ChainFlowProducts",
+      element: <ChainFlowProducts />,
+    },
+    {
+      path: "ProductCategories",
+      element: <ProductCategories />,
+    },
+    {
+      path: "ProductsUnderCategory",
+      element: <ProductsUnderCategory />,
+    },
+    {
+      path: "OrderingPage",
+      element: <OrderingPage />,
+    },
+    {
+      path: "ProductDetails",
+      element: <ProductDetails />,
+    },
+    {
+      path: "MakeOrderRequest",
+      element: <MakeOrder />,
+    },
+    {
+      path: "OrderComplete",
+      element: <OrderComplete />,
+    },
+    {
+      path: "Quotations",
+      element: <QUotations />,
     },
   ]);
   return element;
