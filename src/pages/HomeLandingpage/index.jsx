@@ -10,6 +10,10 @@ import { Input } from "../../components/Input";
 export default function HomeLandingpagePage() {
   const [searchBarValue, setSearchBarValue] = React.useState("");
 
+  const handleSearch = () => {
+    alert("Performing search...");
+  };
+
   return (
     <>
       <Helmet>
@@ -59,7 +63,8 @@ export default function HomeLandingpagePage() {
                   <Button
                     color="blue_gray_900_02"
                     size="19xl"
-                    className="min-w-[165px] rounded-[24px]"
+                    className="min-w-[165px] rounded-[24px]  hover:bg-blue-200 hover:text-blue-900 transition duration-300 ease-in-out"
+                    onClick={handleSearch}
                   >
                     Search
                   </Button>
@@ -125,7 +130,14 @@ export default function HomeLandingpagePage() {
                         src="images/img_image_691.png"
                         alt="step_one"
                         className="w-[76%] ml-0.5 object-cover rounded-[12px]"
-                      />
+                      />{" "}
+                      <Button
+                        color="blue_gray_900_02"
+                        size="18xl"
+                        className="z-[1] min-w-[179px] rounded-[15px]"
+                      >
+                        Download
+                      </Button>
                       <Text
                         size="10xl"
                         as="p"
@@ -276,9 +288,9 @@ export default function HomeLandingpagePage() {
                   </Text>
                   <Link to="/DriverInformation">
                     <Button
-                      color="gray_200"
+                      color="blue_gray_900_02"
                       size="17xl"
-                      className="mt-[22px] min-w-[193px] rounded-[24px]"
+                      className="mt-[22px] min-w-[193px] rounded-[24px] hover:bg-blue-200 hover:text-blue-900 transition duration-300 ease-in-out"
                     >
                       Drive with us
                     </Button>
@@ -308,9 +320,9 @@ export default function HomeLandingpagePage() {
                   </Text>
                   <Link to="/SupplierInformation">
                     <Button
-                      color="gray_200"
+                      color="blue_gray_900_02"
                       size="17xl"
-                      className="mt-10 min-w-[224px] rounded-[24px]"
+                      className="mt-10 min-w-[224px] rounded-[24px] hover:bg-blue-200 hover:text-blue-900 transition duration-300 ease-in-out"
                     >
                       Partner with us
                     </Button>
@@ -345,9 +357,9 @@ export default function HomeLandingpagePage() {
                   </Text>
                   <Link to="/ActiveClientAccount">
                     <Button
-                      color="gray_200"
+                      color="blue_gray_900_02"
                       size="18xl"
-                      className="mt-[31px] min-w-[214px] rounded-[24px]"
+                      className="mt-[31px] min-w-[214px] rounded-[24px] hover:bg-blue-200 hover:text-blue-900 transition duration-300 ease-in-out"
                     >
                       Work with us
                     </Button>
@@ -366,13 +378,6 @@ export default function HomeLandingpagePage() {
               </div>
               <div className="h-[382px] w-full mt-[53px] relative">
                 <div className="flex flex-row justify-center items-center w-full h-full left-0 bottom-0 right-0 top-0 m-auto absolute">
-                  <Button
-                    color="blue_gray_900_02"
-                    size="18xl"
-                    className="z-[1] min-w-[179px] rounded-[15px]"
-                  >
-                    Download
-                  </Button>
                   <div className="flex flex-row justify-center items-start w-full ml-[-177px]">
                     <Text
                       size="3xl"
@@ -385,6 +390,15 @@ export default function HomeLandingpagePage() {
                       service carries a variety of goods and Products from both
                       <br />
                       local global fulfilling Companies.
+                      <Link to="/download" className="mt-10">
+                        <Button
+                          color="blue_gray_900_02"
+                          size="18xl"
+                          className="z-[1] min-w-[179px] mt-[40px] hover:bg-blue-900 hover:text-white transition duration-300 ease-in-out"
+                        >
+                          Download
+                        </Button>
+                      </Link>
                     </Text>
                     <div className="h-[382px] w-[56%] ml-[-11px] relative">
                       <Img
