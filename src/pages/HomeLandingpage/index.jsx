@@ -378,6 +378,13 @@ export default function HomeLandingpagePage() {
               </div>
               <div className="h-[382px] w-full mt-[53px] relative">
                 <div className="flex flex-row justify-center items-center w-full h-full left-0 bottom-0 right-0 top-0 m-auto absolute">
+                  <Button
+                    color="blue_gray_900_02"
+                    size="18xl"
+                    className="z-[1] min-w-[179px] mt-[200px] hover:bg-blue-900 hover:text-white transition duration-300 ease-in-out"
+                  >
+                    Download
+                  </Button>
                   <div className="flex flex-row justify-center items-start w-full ml-[-177px]">
                     <Text
                       size="3xl"
@@ -390,15 +397,6 @@ export default function HomeLandingpagePage() {
                       service carries a variety of goods and Products from both
                       <br />
                       local global fulfilling Companies.
-                      <Link to="/download" className="mt-10">
-                        <Button
-                          color="blue_gray_900_02"
-                          size="18xl"
-                          className="z-[1] min-w-[179px] mt-[40px] hover:bg-blue-900 hover:text-white transition duration-300 ease-in-out"
-                        >
-                          Download
-                        </Button>
-                      </Link>
                     </Text>
                     <div className="h-[382px] w-[56%] ml-[-11px] relative">
                       <Img
